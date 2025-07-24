@@ -1,0 +1,72 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card-custom {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+th,
+td {
+  vertical-align: middle !important;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn-success {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.itotal,
+#total {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.table-bordered tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.head{
+  font-size: 25px;
+}
+.btn6{
+  background-color: rgba(3, 135, 82, 0.886);
+  color: white;
+}
+.btn6:hover{
+  background-color: white;
+  color:rgba(3, 135, 82, 0.886);
+  border: 2px solid rgba(3, 135, 82, 0.886);
+}

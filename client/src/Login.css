@@ -1,0 +1,72 @@
+.body {
+  background-color: #e8edf2;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ✅ Fade-in animation for login container */
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  max-width: 380px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Button hover effect */
+.btn-success:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Microphone bounce animation on hover */
+.btn-outline-secondary:hover {
+  animation: bounce 0.5s;
+}
+
+.form-control {
+  transition: box-shadow 0.3s ease;
+  border-color: #0d6efd;
+}
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+  border-color: #0d6efd;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.strength {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.head{
+  font-size: 25px;
+}
